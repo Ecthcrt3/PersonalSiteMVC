@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal Portfolio Site for Gene Cathcart"
+    />
+    <meta name="author" content="Gene Cathcart" />
+    <title>Gene Cathcart | Full Stack Developer</title>
+    <link rel="Icon" href="/GCFavicon.png" type="image/png" sizes="16x16">
+
+    <!-- Bootstrap StyleSheet -->
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+
+    <!-- Bootstrap Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <!-- link to font awesome free icons -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    <!-- Refreshes the window on resize to reset scripts -->
+    <script>window.onresize = function(){ location.reload(); }</script>
+  </head>
+
+  <body>
+    <div class="loadContainer bg-dark" id="loader">
+      <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+
+    <header class="text-white">
+      <div class="header-bg">
+        <img src="/assets/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="">
+      </div>
+      <div class="header-txt">
+      <h1>Gene Cathcart</h1>
+      <br>
+      <h2>Full Stack Developer</h2>
+      <br>
+      </div>
+    </header>
+
+    <nav class="bg-dark m-1 p-2 sticky-top text-light">
+      <div class="mobileMenu row justify-content-between">
+        <h1>Home</h1>
+        <button id="navToggler" onclick="ToggleNav()">
+          &#9776;
+        </button>
+      </div>
+      <div class="navbar  justify-content-between" id="navList">
+        <a href="https://www.linkedin.com/in/gene-cathcart-49848a25a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <ul class="row">
+          <li class="col-md-3"><a href="/index.html" id="active">Home</a></li>
+          <li class="col-md-3"><a href="/resume.html" >Resume</a></li>
+          <li class="col-md-3"><a href="/projects.html">Projects</a></li>
+          <li class="col-md-3"><a href="/links.html">Links</a></li>
+          <li class="col-md-3"><a href="/contact.html">Contact Me</a></li>
+        </ul>
+        <a href="https://github.com/Ecthcrt3" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </nav>
+
+    <main>
+      <section class=" bg-dark infoBlock">
+        <h1 class="text-light">A little about me</h1>
+        <img src="/assets/geneCathcartProfile.jpg" alt="Profile view of Gene Cathcart" class="devPic">
+        <div class="textbox bg-light">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark mx-1 p-2 text-light fixed-bottom">
+      &copy2023 genecathcart.com
+    </footer>
+
+    <!-- jQuery JS File -->
+    <script src="/js/vendor/jQuery/jquery-3.6.3.min.js"></script>
+
+    <!-- Bootstrap JS File -->
+    <script src="/js/vendor/Bootstrap/bootstrap.min.js"></script>
+
+    <!-- Navbar JS File -->
+    <script src="/js/Main.js"></script>
+  </body>
+</html>
